@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/tubo.css">
+</head>
+<body>
+    <header>
+        <div class="cabe1">
+            <a href="../trabajos.php">
+            <img src="../img/logo.jpeg" alt="" ></a>
+        </div>
+        <div class="cabe2">
+            <h1>Prodeluz Sistemas</h1>
+            <h2>Proyecto: Mantenimiento Integral de Oficinas</h2>
+        </div>
+        
+        
+    </header>
+    <main>
+        <section class="project-details">
+            <div class="project-section">
+                <h3 onclick="toggleSection('desc')">Descripción del Proyecto</h3>
+                <div id="desc" class="section-content">
+                    <p>El proyecto de Mantenimiento Integral de Oficinas tiene como objetivo principal garantizar el correcto funcionamiento de todas las instalaciones de las oficinas de nuestros clientes, mejorando la eficiencia energética y asegurando un ambiente de trabajo óptimo.</p>
+                    <div class="images">
+                        <img src="../rafa/cami.jpeg" alt="" class="project-image">
+                        <img src="../rafa/cami1.jpeg" alt="" class="project-image">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('objectives')">Objetivos</h3>
+                <div id="objectives" class="section-content">
+                    <ul>
+                        <li>Optimizar el uso de recursos energéticos.</li>
+                        <li>Mantener las instalaciones en perfecto estado.</li>
+                        <li>Reducir los tiempos de inactividad por mantenimiento.</li>
+                        <li>Implementar medidas de seguridad y prevención.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('dates')">Fechas Clave</h3>
+                <div id="dates" class="section-content">
+                    <p><strong>Fecha de inicio:</strong> 1 de enero de 2024</p>
+                    <p><strong>Fecha de finalización:</strong> 31 de diciembre de 2024</p>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('budget')">Presupuesto</h3>
+                <div id="budget" class="section-content">
+                    <p><strong>Total:</strong> 50,000 €</p>
+                    <p>El presupuesto incluye costos de mano de obra, materiales, y servicios necesarios para el mantenimiento integral durante todo el año.</p>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('benefits')">Beneficios Esperados</h3>
+                <div id="benefits" class="section-content">
+                    <ul>
+                        <li>Reducción en el consumo de energía.</li>
+                        <li>Incremento en la productividad de los empleados.</li>
+                        <li>Menor riesgo de fallos en las instalaciones.</li>
+                        <li>Mejoras en la seguridad y salud ocupacional.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('responsibles')">Responsables del Proyecto</h3>
+                <div id="responsibles" class="section-content">
+                    <p><strong>Encargado Técnico:</strong> Juan Pérez</p>
+                    <p>Juan cuenta con más de 20 años de experiencia en mantenimiento de instalaciones y se encargará de supervisar todas las actividades técnicas.</p>
+                    <p><strong>Encargado Visual:</strong> Ana López</p>
+                    <p>Ana es especialista en diseño de interiores y ergonomía, asegurando que todas las mejoras sean visualmente agradables y funcionales.</p>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('methodology')">Metodología</h3>
+                <div id="methodology" class="section-content">
+                    <p>Utilizamos una metodología ágil para gestionar el proyecto, asegurando flexibilidad y adaptación a las necesidades cambiantes de nuestros clientes. Esto incluye revisiones periódicas, ajustes continuos y comunicación constante con los responsables de cada área.</p>
+                </div>
+            </div>
+            
+            <div class="project-section">
+                <h3 onclick="toggleSection('contact')">Contacto</h3>
+                <div id="contact" class="section-content">
+                    <p>Para más información sobre este proyecto o para cualquier consulta, puede contactarnos en:</p>
+                    <p><strong>Email:</strong> contacto@prodeluz.com</p>
+                    <p><strong>Teléfono:</strong> +34 123 456 789</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script>
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            section.style.display = section.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

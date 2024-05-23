@@ -1,0 +1,177 @@
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #817a7ace;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  overflow: scroll;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  text-align: center;
+  padding: 50px;
+  background-color: white;
+  border-radius: 100px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-top: 130px;
+  width: 80%;
+  max-width: 1200px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-size: 2em;
+  margin: 20px 0 10px 0;
+  color: #333;
+}
+
+p {
+  font-size: 1.2em;
+  margin-bottom: 40px;
+  color: #666;
+}
+
+.features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.feature {
+  width: 30%;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+.feature img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.feature h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1em;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .feature {
+      width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .feature {
+      width: 90%;
+  }
+}
+
+.logo {
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+}
+
+.logo img {
+  display: block;
+  height: 4rem;
+  width: auto;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav {
+  position: absolute;
+  top: 2rem;
+  z-index: 10;
+}
+
+.nav--left {
+  left: 1rem;
+}
+
+.nav--right {
+  right: 1rem;
+}
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  height: 1rem;
+}
+
+.nav li {
+  display: block;
+  margin: 0 1rem;
+  padding: 0;
+}
+
+.nav a {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: calc(0.5rem + 0.35vw);
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+.nav a span {
+  position: relative;
+}
+
+.nav a span:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -0.35rem;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.25);
+  transition: transform 0.75s ease;
+  transform-origin: right;
+  transform: scaleX(0);
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav a:hover span:before, .nav a.is-active span:before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.cart-total {
+  display: block;
+  height: 2rem;
+  width: 2rem;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 2rem;
+  margin-left: 1rem;
+}

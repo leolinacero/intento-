@@ -1,0 +1,145 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+.cabe1 {
+    margin-right: 20px;
+}
+.cabe1 img {
+    max-width: 100px; 
+    height: auto;
+}
+
+.cabe2 h1 {
+    margin: 0;
+    font-size: 24px; 
+}
+
+.cabe2 h2 {
+    margin: 0;
+    font-size: 18px; 
+    color: #555; 
+}
+
+header {
+    background-color: #94c1f1;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+main {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-details {
+    padding: 20px;
+}
+
+.project-section {
+    margin-bottom: 20px;
+}
+
+.project-section h3 {
+    font-size: 1.8em;
+    color: #b4d2f2;
+    border-bottom: 2px solid #94c1f1;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.project-section .section-content {
+    display: none;
+    margin-top: 10px;
+}
+
+.project-section p, .project-section ul {
+    margin: 10px 0;
+    font-size: 1.1em;
+}
+
+.project-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.project-section strong {
+    color: #000000;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.project-image {
+    width: calc(33.333% - 20px);
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 2em;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    .project-section h3 {
+        font-size: 1.5em;
+    }
+
+    .project-section p, .project-section ul {
+        font-size: 1em;
+    }
+
+    .images {
+        gap: 10px;
+    }
+
+    .project-image {
+        width: calc(50% - 10px);
+    }
+}
+
+@media (max-width: 480px) {
+    .project-image {
+        width: 100%;
+    }
+}
